@@ -63,6 +63,18 @@ main {
     margin: auto;
 }
 
+/*Űrlap formázás*/
+
+#nevek {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+#nevek label {
+    text-align: center;
+    padding-right: 5px;
+}
+
 @media screen and (max-width: 600px) {
     main {
         background-color: lightblue;
@@ -85,5 +97,13 @@ main {
         text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    #nevek {
+        grid-template-columns: auto;
+        font-size: 15pt;
+    }
+
+    #nevek label {
+        text-align: left;
     }
 }
